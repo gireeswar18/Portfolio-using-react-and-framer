@@ -38,7 +38,7 @@ const Hero = () => {
             dynamic user experiences. Let's build something great together!
           </p>
           <a
-            href="/public/Gireeswar C P.pdf"
+            href="../assets/Gireeswar C P.pdf"
             target="_blank"
             className="mt-4 text-nowrap rounded-lg border border-indigo-600 bg-black px-5 py-3 text-lg font-bold text-white shadow-lg shadow-indigo-700 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-indigo-600"
           >
