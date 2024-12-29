@@ -3,6 +3,7 @@ import chatbot from "/public/undraw_Chat_bot_re_e2gj.png";
 import messaging from "/public/undraw_Messaging_app_re_aytg.png";
 import jobify from "/public/undraw_online_resume_re_ru7s.png";
 import spotify from "/public/undraw_Music_re_a2jk.png";
+import imagify from "/public/undraw_forming-ideas_3bup.png";
 import { motion } from "framer-motion";
 
 const projectsData = [
@@ -11,6 +12,12 @@ const projectsData = [
     title: "Job Application Platform",
     desc: "Built a job application platform with user authentication, enabling seamless job posting and application processes. Integrated email notifications for job application updates",
     tech: ["Spring Boot", "MongoDB", "React", "Tailwind"],
+  },
+  {
+    image: imagify,
+    title: "Text to Image Generator",
+    desc: "Developed a text-to-image application, featuring secure JWT-based authentication, Razorpay integration for payments, and an intuitive interface to enhance user experience.",
+    tech: ["MongoDB", "Express", "React", "Node", "ClipDrop AI"],
   },
   {
     image: messaging,
