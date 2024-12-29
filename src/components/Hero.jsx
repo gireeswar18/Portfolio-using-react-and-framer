@@ -2,6 +2,11 @@ import image from "/public/g2.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const showResume = () => {
+    const resumeUrl = '/public/Gireeswar C P.pdf';
+    window.open(resumeUrl, '_blank');
+  };
+
   return (
     <div
       id="home"
@@ -37,13 +42,13 @@ const Hero = () => {
             seamless backend integration, I create efficient solutions for
             dynamic user experiences. Let's build something great together!
           </p>
-          <a
-            href="../assets/Gireeswar C P.pdf"
+          <button
+            onClick={showResume}
             target="_blank"
             className="mt-4 text-nowrap rounded-lg border border-indigo-600 bg-black px-5 py-3 text-lg font-bold text-white shadow-lg shadow-indigo-700 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-indigo-600"
           >
             Resume
-          </a>
+          </button>
         </motion.div>
       </div>
     </div>
