@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const showResume = () => {
-    const resumeUrl = '/public/Gireeswar C P.pdf';
-    window.open(resumeUrl, '_blank');
+    const resumeUrl = '/public/GireeswarCP.pdf';
+    window.open(resumeUrl);
   };
 
   return (
