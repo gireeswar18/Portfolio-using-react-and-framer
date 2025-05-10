@@ -121,15 +121,15 @@ const Navbar = () => {
             </li>
           </ul>
           <ul className="flex flex-wrap gap-5">
-            <li className="cursor-pointer text-white opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100">
+            <li className="cursor-pointer text-white opacity-70 transition-all duration-300 hover:text-blue-500 hover:opacity-100" onClick={gotoLinkedIn}>
               <BsLinkedin />
             </li>
-            <li className="cursor-pointer text-white opacity-70 transition-all duration-300 hover:text-black-500 hover:opacity-100">
+            <li className="cursor-pointer text-white opacity-70 transition-all duration-300 hover:text-black-500 hover:opacity-100" onClick={gotoGitHub}>
               <BsGithub />
             </li>
-            <li className="cursor-pointer text-white opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
+            {/* <li className="cursor-pointer text-white opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
               <SiLeetcode size={16} />
-            </li>
+            </li> */}
           </ul>
         </div>
       )}
