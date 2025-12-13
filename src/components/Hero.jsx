@@ -36,10 +36,7 @@ const Hero = () => {
             Software Developer
           </h3>
           <p className="md:text-base text-pretty text-sm text-gray-400">
-            I'm a Software Developer skilled in Java, Spring Boot and React, focused on
-            building clean, scalable applications. From front-end design to
-            seamless backend integration, I create efficient solutions for
-            dynamic user experiences. Let's build something great together!
+            I’m a Cloud-oriented Software Developer who enjoys designing and deploying end-to-end applications on AWS. From serverless systems to containerized apps, I focus on scalability, performance, and real-world impact. I’m also exploring AI-driven applications in Python while strengthening my problem-solving skills with Java.
           </p>
           <button
             onClick={showResume}

@@ -1,12 +1,48 @@
-import library from "/public/undraw_Books_re_8gea.png";
 import chatbot from "/public/undraw_Chat_bot_re_e2gj.png";
 import jobify from "/public/undraw_online_resume_re_ru7s.png";
-import imagify from "/public/undraw_forming-ideas_3bup.png";
-import url from "/public/undraw_link-shortener_9ro5.png";
-import task from "/public/undraw_add-tasks_4qsy.png";
+import resumeCritiquer from "/public/undraw_screening-resumes_dh9s.png";
+import urlShortener from "/public/undraw_link-shortener_9ro5.png";
+import attendance from "/public/undraw_video-call_i5de.png";
 import { motion } from "framer-motion";
 
 const projectsData = [
+  {
+    image: resumeCritiquer,
+    title: "AI Resume Critiquer using Gemini",
+    desc: "Designed and deployed an AI-based resume critiquer using Google Gemini that analyzes resume content and generates personalized feedback. Implemented real-time file processing with Streamlit and deployed the application on AWS for scalable access.",
+    tech: [
+      "Python",
+      "Streamlit",
+      "Gemini",
+      "AWS ECR",
+      "AWS ECS",
+      "AWS Codebuild",
+      "Docker",
+    ],
+    link: "https://www.linkedin.com/posts/gireeswarcp18_deployed-my-ai-powered-resume-critiquer-activity-7404144542746419206-eNyn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8kxbQBaJxHvY3r7CZZa3kIlUjfQD6H6LU",
+  },
+  {
+    image: urlShortener,
+    title: "Serverless URL shortener",
+    desc: "Built a fully serverless URL shortener using AWS Lambda, API Gateway, and DynamoDB, enabling fast URL generation and redirection. Integrated a React frontend with S3 and CloudFront for scalable and secure global delivery.",
+    tech: [
+      "Python",
+      "AWS Lambda",
+      "API Gateway",
+      "DynamoDB",
+      "S3",
+      "CloudFront",
+      "React",
+    ],
+    link: "https://www.linkedin.com/posts/gireeswarcp18_aws-serverless-cloudcomputing-activity-7403415948017467392-sA-_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8kxbQBaJxHvY3r7CZZa3kIlUjfQD6H6LU",
+  },
+  {
+    image: attendance,
+    title: "LBPH Face Based Attendance System",
+    desc: "Developed an automated attendance system using face detection and recognition to identify users in real time and record attendance with timestamps.",
+    tech: ["Python", "Mediapipe", "OpenCV"],
+    link: "https://github.com/gireeswar18/LBPH_face_based_attendance_system",
+  },
   {
     image: jobify,
     title: "Job Application Platform",
@@ -14,40 +50,7 @@ const projectsData = [
     tech: ["Spring Boot", "MongoDB", "React", "Tailwind"],
     link: "https://github.com/gireeswar18/job-application-platform",
   },
-  {
-    image: url,
-    title: "Url Shortener",
-    desc: "Built a URL shortener with user authentication, enabling users to create and manage short links. Utilized local storage to store the user ID, maintaining session persistence and eliminating the need for re-login on subsequent visits.",
-    tech: ["Spring Boot", "React", "Tailwind", "MySQL"],
-    link: "https://github.com/gireeswar18/url_shortener",
-  },
-  {
-    image: task,
-    title: "Task Tracker",
-    desc: "Developed a task tracker app with OAuth 2.0 for faster logins, and implemented RESTful APIs for task management with a responsive UI.",
-    tech: ["Spring Boot", "React", "Tailwind", "PostgreSQL"],
-    link: "https://github.com/gireeswar18/tasktracker",
-  },
-  {
-    image: imagify,
-    title: "Text to Image Generator",
-    desc: "Developed a text-to-image application, featuring secure JWT-based authentication, Razorpay integration for payments, and an intuitive interface to enhance user experience.",
-    tech: ["MongoDB", "Express", "React", "Node", "ClipDrop AI"],
-    link: "https://github.com/gireeswar18/Imagify",
-  },
-  //   {
-  //     image: messaging,
-  //     title: "Chat Application",
-  //     desc: "Developed a chat application, enabling real-time messaging and media sharing for a seamless communication experience. Integrated features for sending text messages and pictures and implemented a user blocking functionality",
-  //     tech: ["React", "Firebase"],
-  //   },
-  {
-    image: library,
-    title: "Digital Library Application",
-    desc: "Developed a comprehensive library management system using Java, Spring Boot, and MySQL, creating RESTful APIs for managing books, authors, languages, and users.",
-    tech: ["Spring Boot", "MySQL"],
-    link: "https://github.com/gireeswar18/Digital-Library-Spring-Application",
-  },
+
   {
     image: chatbot,
     title: "Gemini Clone",
@@ -55,21 +58,11 @@ const projectsData = [
     tech: ["React", "Gemini API"],
     link: "https://github.com/gireeswar18/Gemini-Clone",
   },
-  //   {
-  //     image: spotify,
-  //     title: "Spotify Front-End Clone",
-  //     desc: "Built a Spotify Clone application using modern React hooks and implemented seek bar to control the playback.",
-  //     tech: ["React"],
-  //   },
 ];
 
 const ProjectCard = ({ project }) => {
   const goto = (gitLink) => {
-    window.open(
-      gitLink,
-      "_blank",
-      "noopener,noreferrer"
-    );
+    window.open(gitLink, "_blank", "noopener,noreferrer");
   };
 
   return (
