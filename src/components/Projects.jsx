@@ -5,6 +5,7 @@ import urlShortener from "/public/undraw_link-shortener_9ro5.png";
 import attendance from "/public/undraw_video-call_i5de.png";
 import judge from "/public/undraw_judge_hyqv.png";
 import { motion } from "framer-motion";
+import { FiExternalLink } from "react-icons/fi";
 
 const projectsData = [
   {
@@ -25,7 +26,7 @@ const projectsData = [
   {
     image: judge,
     title: "RAG based Legal Assistant",
-    desc: "Built a Legal RAG application that processes legal PDFs, generates embeddings, and retrieves relevant clauses using FAISS for context-aware question answering. Integrated a local LLM for response generation, enforced source-grounded outputs to prevent hallucinations, and delivered a user-friendly Streamlit UI for real-time legal document exploration.",
+    desc: "Built a Legal RAG application that allows users to query legal PDFs and retrieve relevant clauses using FAISS. Integrated a local LLM to generate source-grounded answers and provided an intuitive Streamlit interface for real-time document exploration.",
     tech: [
       "Python",
       "FAISS",
@@ -81,10 +82,7 @@ const ProjectCard = ({ project }) => {
 
   return (
     <ScrollReveal>
-      <div
-        className="flex flex-col items-start justify-center gap-8 md:flex-row md:gap-24 hover:border hover:border-white hover:scale-105 transition-all duration-300 cursor-pointer p-[16px] rounded-2xl"
-        onClick={() => goto(project.link)}
-      >
+      <div className="flex flex-col items-start justify-center gap-8 md:flex-row md:gap-24 transition-all duration-300 p-[16px] rounded-2xl">
         <img
           src={project.image}
           alt={project.title}
@@ -93,6 +91,12 @@ const ProjectCard = ({ project }) => {
         <div className="flex flex-col gap-5">
           <div className="flex flex-col gap-3">
             <div className="text-2xl font-semibold">{project.title}</div>
+            <p
+              className="text-gray-400 underline cursor-pointer"
+              onClick={() => goto(project.link)}
+            >
+              View on GitHub
+            </p>
             <p className="text-gray-400">{project.desc}</p>
           </div>
           <div className="flex flex-wrap gap-5">

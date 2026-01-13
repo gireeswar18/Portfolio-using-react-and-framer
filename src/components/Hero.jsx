@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const showResume = () => {
-    window.open('/GireeswarCP.pdf', '_blank')
+    window.open("/GireeswarCP.pdf", "_blank");
   };
 
   return (
@@ -16,13 +16,7 @@ const Hero = () => {
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <img
-            src={image}
-            alt="my-pic"
-            className="hidden w-[230px] cursor-pointer rounded-full shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600 md:w-[280px]"
-          />
-        </motion.div>
+        ></motion.div>
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -32,11 +26,16 @@ const Hero = () => {
           <h1 className="bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent opacity-80 text-5xl font-light md:text-7xl">
             Gireeswar C P
           </h1>
+
           <h3 className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent opacity-80 text-2xl md:text-3xl">
             Software Developer
           </h3>
           <p className="md:text-base text-pretty text-sm text-gray-400">
-            I’m a Cloud-oriented Software Developer who enjoys designing and deploying end-to-end applications on AWS. From serverless systems to containerized apps, I focus on scalability, performance, and real-world impact. I’m also exploring AI-driven applications in Python while strengthening my problem-solving skills with Java.
+            I’m a Cloud-oriented Software Developer who enjoys designing and
+            deploying end-to-end applications on AWS. From serverless systems to
+            containerized apps, I focus on scalability, performance, and
+            real-world impact. I’m also exploring AI-driven applications in
+            Python while strengthening my problem-solving skills with Java.
           </p>
           <button
             onClick={showResume}
