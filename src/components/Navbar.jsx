@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { SiLeetcode } from "@icons-pack/react-simple-icons";
 import { BiMenu, BiX } from "react-icons/bi";
 
 const Navbar = () => {
@@ -16,9 +15,6 @@ const Navbar = () => {
   const gotoGitHub = () => {
     window.open("https://github.com/gireeswar18", "_blank", "noopener,noreferrer");
   }
-  // const gotoLeetCode = () => {
-  //   window.open("https://leetcode.com/u/Gireeswar18/", "_blank", "noopener,noreferrer");
-  // }
 
   return (
     <nav className="fixed top-0 z-10 flex w-full items-center justify-between border-b border-b-gray-700 bg-black/70 px-16 py-6 text-white backdrop-blur-md md:justify-evenly">
@@ -71,9 +67,6 @@ const Navbar = () => {
         <li className="cursor-pointer text-white opacity-70 transition-all duration-300 hover:text-black-500 hover:opacity-100" title="GitHub" onClick={gotoGitHub}>
           <BsGithub />
         </li>
-        {/* <li className="cursor-pointer text-white opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100" onClick={gotoLeetCode}>
-          <SiLeetcode size={16} />
-        </li> */}
       </ul>
 
       {isOpen ? (
@@ -127,9 +120,6 @@ const Navbar = () => {
             <li className="cursor-pointer text-white opacity-70 transition-all duration-300 hover:text-black-500 hover:opacity-100" onClick={gotoGitHub}>
               <BsGithub />
             </li>
-            {/* <li className="cursor-pointer text-white opacity-70 transition-all duration-300 hover:text-orange-500 hover:opacity-100">
-              <SiLeetcode size={16} />
-            </li> */}
           </ul>
         </div>
       )}
