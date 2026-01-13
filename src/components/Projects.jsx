@@ -3,6 +3,7 @@ import jobify from "/public/undraw_online_resume_re_ru7s.png";
 import resumeCritiquer from "/public/undraw_screening-resumes_dh9s.png";
 import urlShortener from "/public/undraw_link-shortener_9ro5.png";
 import attendance from "/public/undraw_video-call_i5de.png";
+import judge from "/public/undraw_judge_hyqv.png";
 import { motion } from "framer-motion";
 
 const projectsData = [
@@ -19,7 +20,20 @@ const projectsData = [
       "AWS Codebuild",
       "Docker",
     ],
-    link: "https://www.linkedin.com/posts/gireeswarcp18_deployed-my-ai-powered-resume-critiquer-activity-7404144542746419206-eNyn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8kxbQBaJxHvY3r7CZZa3kIlUjfQD6H6LU",
+    link: "https://github.com/gireeswar18/Resume-Critiquer",
+  },
+  {
+    image: judge,
+    title: "RAG based Legal Assistant",
+    desc: "Built a Legal RAG application that processes legal PDFs, generates embeddings, and retrieves relevant clauses using FAISS for context-aware question answering. Integrated a local LLM for response generation, enforced source-grounded outputs to prevent hallucinations, and delivered a user-friendly Streamlit UI for real-time legal document exploration.",
+    tech: [
+      "Python",
+      "FAISS",
+      "Sentence Transformers",
+      "Mistral(Ollama)",
+      "Streamlit",
+    ],
+    link: "https://github.com/gireeswar18/Legal-RAG-Assistant",
   },
   {
     image: urlShortener,
@@ -34,7 +48,7 @@ const projectsData = [
       "CloudFront",
       "React",
     ],
-    link: "https://www.linkedin.com/posts/gireeswarcp18_aws-serverless-cloudcomputing-activity-7403415948017467392-sA-_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8kxbQBaJxHvY3r7CZZa3kIlUjfQD6H6LU",
+    link: "https://github.com/gireeswar18/Serverless-URL-Shortener",
   },
   {
     image: attendance,
