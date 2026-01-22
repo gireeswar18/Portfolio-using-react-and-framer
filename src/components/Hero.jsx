@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   const showResume = () => {
-    window.open("/GireeswarCP.pdf", "_blank");
+    window.open("/Gireeswar_C_P.pdf", "_blank");
   };
 
   return (
